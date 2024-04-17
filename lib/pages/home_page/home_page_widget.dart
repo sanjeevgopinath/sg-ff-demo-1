@@ -188,6 +188,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             .asValidator(context),
                       ),
                     ),
+                    Align(
+                      alignment: const AlignmentDirectional(-1.0, 0.0),
+                      child: Text(
+                        'New Text Field',
+                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                              fontFamily: 'Readex Pro',
+                              letterSpacing: 0.0,
+                            ),
+                      ),
+                    ),
                     FFButtonWidget(
                       onPressed: () async {
                         await actions.createPDF(
